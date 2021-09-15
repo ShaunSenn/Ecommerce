@@ -1,28 +1,20 @@
 html {
-    font-size: 62.5%; // 1rem is 10px
+    font-size: 62.5%; //standard font size is 16px, when I multiply 16px x 0.625 I get 10, so setting it up this way makes it to where the h1 tag below is actually equal to 10px.
 }
+
+h1 {
+    font-size: 1rem;
+}
+
 
 *,
 *::after,
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
-    font-family: 'montserrat';
+    box-sizing: inherit
 }
 
-body {
-    overflow-x: hidden;
-    font-weight: normal;
 
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.app {
-    margin-top: 2rem;
-    display: grid;
-    justify-items: center;
-}
+@import 'layout';
+@import 'headernavbar';
