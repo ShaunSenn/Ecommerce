@@ -6,6 +6,10 @@ h1 {
     font-size: 1rem;
 }
 
+body {
+    font-family: "Open Sans";
+    color: #808080;
+}
 
 *,
 *::after,
@@ -20,4 +24,6 @@ h1 {
 @import 'headernavbar';
 @import 'auth/signin';
 @import 'auth/signup';
+
 @import 'page-title';
+@import 'form-fields';
