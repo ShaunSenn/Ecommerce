@@ -32,6 +32,10 @@
     }
 }
 
+.green-text {
+    color: #00cb79 !important;
+}
+
 .navbar {
     grid-row: navbar-s/navbar-e;
     grid-column: 1/-1;
@@ -48,11 +52,7 @@
     color: #e6e6e6;
     font-size: 18px;
 
-    &__link {
-        color: #00cb79;
-    }
-
     & > * {
         grid-row: s/e;
-    }
+    } //this puts every item on the same row
 }

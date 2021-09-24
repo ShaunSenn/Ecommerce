@@ -1,7 +1,26 @@
 import React, { Component } from 'react';
 
+import { connect } from 'react-redux';
+import * as actions from '../../actions';
 
 class Account extends Component {
+
+    componentDidMount() {
+
+        const navbarLinks = [
+            {
+                title: 'Purchase History',
+                active: false
+            },
+            {
+                title: 'Account Information',
+                active: false
+            }
+        ]
+
+        this.props.setHeaderLinks([]);
+        this.props.setNavbarLinks([navbarLinks]);
+    }
 
     renderContent() {
         return <h1> Content </h1>
@@ -17,5 +36,7 @@ class Account extends Component {
         )
     }
 }
+
+Account = connect(null, actions)(Account);
 
 export default Account;
