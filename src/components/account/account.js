@@ -3,40 +3,59 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 
+import PurchaseHistory from './purchaseHistory';
+import AccountInformation from './accountInformation';
+
 class Account extends Component {
 
     componentDidMount() {
-
+        
         const navbarLinks = [
             {
+                __id: 0,
                 title: 'Purchase History',
-                active: false
+                active: false,
+                component: <PurchaseHistory />
             },
             {
+                __id: 1,
                 title: 'Account Information',
-                active: false
+                active: true,
+                component: <AccountInformation />
             }
+
         ]
 
         this.props.setHeaderLinks([]);
-        this.props.setNavbarLinks([navbarLinks]);
+        this.props.setNavbarLinks(navbarLinks);
     }
 
     renderContent() {
-        return <h1> Content </h1>
+        let jsx;
+        if(this.props.navbarLinks) {
+            this.props.navbarLinks.map(link => {
+                if(link.active) {
+                    jsx = link.component
+                }
+            })
+        }
+        return jsx;
     }
 
     render() {
         return (
             <div>
-                {
-                    this.renderContent()
-                }
+                { this.renderContent() }
             </div>
         )
     }
 }
 
-Account = connect(null, actions)(Account);
+function mapStateToProps(state) {
+    const { headerLinks, navbarLinks} = state.headerNavbar;
+    return { headerLinks, navbarLinks }
+}
+
+Account = connect(mapStateToProps, actions)(Account);
 
 export default Account;
