@@ -68,7 +68,7 @@ export function fetchUserPurchases() {
                     name: 'Shaun Senn',
                     shippingAddress: '123 North State Street'
                 }
-            },
+            },            
             {
                 _id: 5,
                 total: 10.40,
@@ -81,9 +81,9 @@ export function fetchUserPurchases() {
                 }
             },
             {
-                __id: 6,
-                total: 10.40,
-                orderNumber: 'A0048248344',
+                _id: 6,
+                total: 10.50,
+                orderNumber: 'A0067858344',
                 orderDate: new Date().toDateString(),
                 creditCard: '-0000',
                 user: {
@@ -92,7 +92,7 @@ export function fetchUserPurchases() {
                 }
             },
             {
-                __id: 7,
+                _id: 7,
                 total: 10.40,
                 orderNumber: 'A0048248344',
                 orderDate: new Date().toDateString(),
