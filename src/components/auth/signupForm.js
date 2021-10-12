@@ -82,6 +82,7 @@ class SignupForm extends Component {
                     name='back'
                     short={true}
                     component={FormButton}/>
+                    <Details className='sign-up-form__details' title='Password Requirements' info={info} />
             </form>
         )
     }

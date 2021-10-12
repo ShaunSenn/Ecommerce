@@ -74,9 +74,9 @@ class AccountForm extends Component {
                     component={FormInput}
                 />
 
+                <div key={3} className="account-form__line"></div>,
                 {
-                    this.state.showPasswords 
-                    ?
+                    this.state.showPasswords ?
                 [
                     <Field 
                     key={0}
@@ -101,7 +101,24 @@ class AccountForm extends Component {
                     title='Confirm Password' 
                     placeholder='Confirm Password' 
                     name='confirm' 
-                    component={FormInput}/>
+                    component={FormInput}/>,
+                    <Field
+                    key={4} 
+                    className='account-form__update-information' 
+                    onClick={() => this.setState({showPasswords: false})}
+                    type= 'submit'
+                    title='Update Information'
+                    name='update-information'
+                    component={FormButton}/>,
+                    <Field
+                    key={5} 
+                    className='account-form__cancel' 
+                    onClick={() => this.setState({showPasswords: false})}
+                    type='button'
+                    title='Cancel'
+                    name='cancel'
+                    short={true} 
+                    component={FormButton}/>
                 ]
                     :
                     <Field 
@@ -113,29 +130,6 @@ class AccountForm extends Component {
                     name='change-password'
                     component={LongGrayButton}/>
                 }
-
-                {/* <Field 
-                    className='account-form__confirm-password' 
-                    type='password'
-                    title='Confirm Password'
-                    placeholder='Confirm Password'
-                    name='Confirm Password' 
-                    component={FormInput}
-                />
-                <Field 
-                    className='account-form__login' 
-                    onClick={() => history.push('/account')}
-                    type='submit'
-                    title='Submit'
-                    name='submit' 
-                    component={FormButton}/>
-                <Field 
-                    className='account-form__login' 
-                    onClick={() => history.push('/account')}
-                    type='submit'
-                    title='Submit'
-                    name='submit' 
-                    component={FormButton}/> */}
             </form>
         )
     }
