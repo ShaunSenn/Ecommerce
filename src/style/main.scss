@@ -22,13 +22,19 @@ body {
 
 @import 'layout';
 @import 'headernavbar';
-@import 'auth/signin';
-@import 'auth/signup';
-
 @import 'page-title';
 @import 'form-fields';
 @import 'details';
 
+//Auth
+@import 'auth/signin';
+@import 'auth/signup';
+
+
+//Account
 @import 'account/account';
 @import 'account/purchase-history';
 @import 'account/account-information';
+
+//Shop
+@import 'shop/shop';
