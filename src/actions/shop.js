@@ -64,21 +64,21 @@ export function fetchShopProducts() {
             {
                 _id: 0,
                 title: 'JavaScript in the Browser',
-                description: 'The FitnessGram',
+                description: 'Things about objects and such other things',
                 price: 1.99,
                 belongsTo: [0, 1]
             },
             {
                 _id: 1,
                 title: 'Graph Database',
-                description: 'The FitnessGram',
+                description: 'Stuff dealing with graph databases in here',
                 price: 1.99,
                 belongsTo: [0, 6]
             },
             {
                 _id: 2,
                 title: 'Full Stack Development',
-                description: 'The FitnessGram',
+                description: 'Front end, Back end, and everything in between ',
                 price: 1.99,
                 belongsTo: [0, 1, 4]
             },

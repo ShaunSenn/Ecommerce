@@ -52,7 +52,12 @@
     color: #e6e6e6;
     font-size: 18px;
 
+
     & > * {
         grid-row: s/e;
     } //this puts every item on the same row
+
+    &__link {
+        cursor: pointer;
+    }
 }
