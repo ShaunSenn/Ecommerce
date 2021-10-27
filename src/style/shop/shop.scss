@@ -31,13 +31,12 @@
     display: grid;
     grid-template-rows: 15px [search-bar-s] 38px [search-bar-e products-s] 1fr [products-e]; 
     grid-template-columns: [s] minmax(100px, 1035px) [e];
-    justify-content: center;
-    grid-gap: 57px;
+    justify-items: center;
+    grid-gap: 20px;
 
     &__search-bar {
         grid-row: search-bar-s/search-bar-e;
         grid-column: s/e;
-
     }
 
     &__products {
@@ -45,11 +44,11 @@
         grid-column: s/e;
 
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-        grid-column-gap: 25px;
-        grid-row-gap: 40px;
+        grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+        // grid-column-gap: 25px;
+        grid-row-gap: 30px;
         // max-width: 1035px;
         width: 100%;
-        justify-content: center;
+        justify-items: center;
     }
 }
