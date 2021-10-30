@@ -19,6 +19,9 @@ body {
     box-sizing: inherit;
 }
 
+//Variables
+$green-button: #00CB79;
+
 
 @import 'layout';
 @import 'headernavbar';
@@ -45,6 +48,3 @@ body {
 //Quantity
 @import 'quantity';
 @import 'green-price-tag';
-
-//Variables
-@import 'variables';
