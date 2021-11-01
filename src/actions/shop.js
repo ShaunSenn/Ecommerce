@@ -60,6 +60,7 @@ export function fetchShopCategories() {
 export function fetchShopProducts() {
     return ({
         type: SET_SHOP_PRODUCTS,
+
         payload: [
             {
                 _id: 0,
