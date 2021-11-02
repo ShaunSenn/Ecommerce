@@ -43,7 +43,10 @@ $green-button: #00CB79;
 @import 'shop/shop';
 @import 'shop/shop-search-bar';
 @import 'shop/shop-product';
+
+//CART
 @import 'shop/shop-cart.scss';
+@import 'shop/cart-product.scss';
 
 //Quantity
 @import 'quantity';
