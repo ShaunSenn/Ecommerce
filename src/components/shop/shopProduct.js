@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
-
 import GreenPriceTag from '../greenPriceTag';
 import Quantity from '../quantity';
 
 class ShopProduct extends Component {
     render() {
-        const { _id, title, description, price } = this.props;
+        const { _id, title, description, price } = this.props; //product here is referencing to the actual products in user.js
         return(
             <div className='shop-product'>
                 <div className='shop-product__front'>
