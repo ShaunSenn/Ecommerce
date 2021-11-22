@@ -19,7 +19,7 @@ body {
     box-sizing: inherit;
 }
 
-//Variables
+//VARIABLES
 $green-button: #00CB79;
 
 
@@ -29,25 +29,28 @@ $green-button: #00CB79;
 @import 'form-fields';
 @import 'details';
 
-//Auth
+//AUTH
 @import 'auth/signin';
 @import 'auth/signup';
 
 
-//Account
+//ACCOUNT
 @import 'account/account';
 @import 'account/purchase-history';
 @import 'account/account-information';
 
-//Shop
+//SHOP
 @import 'shop/shop';
 @import 'shop/shop-search-bar';
 @import 'shop/shop-product';
 
 //CART
-@import 'shop/shop-cart.scss';
-@import 'shop/cart-product.scss';
+@import 'shop/shop-cart';
+@import 'shop/cart-product';
 
-//Quantity
+//QUANTITY
 @import 'quantity';
 @import 'green-price-tag';
+
+//REVIEW
+@import 'order/review';
