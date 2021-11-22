@@ -9,3 +9,4 @@ function CartButton({className, icon, onClick}) {
 }
 
 export default CartButton;
+//This is finally created in the "how to slide cart component on and off screen"
