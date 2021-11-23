@@ -9,10 +9,10 @@ h1 {
 body {
     font-family: "Open Sans";
     color: #808080;
-
+//The lines below are to allow for cleaner readability in all browsers i.e. firefox
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility; //this is depricated
     -webkit-tap-highlight-color: transparent;
 }
 
