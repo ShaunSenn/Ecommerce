@@ -1,7 +1,7 @@
 .review {
     grid-row: content-s/content-e;
     grid-column: s/e;
-
+//side note, minmax() is used generally for columns to make an app mobile responsive
     &__form {
         display: grid;
         grid-template-rows: [products-s] 400px [product-e line-s] 26px [line-e buttons-s] 38px [buttons-e];

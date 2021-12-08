@@ -32,7 +32,7 @@ export function fetchCartProducts() {
                     description: 'Things about objects and such other things',
                     price: 1.99,
                     belongsTo: [0, 1],
-                    imageUrl: 'http//via.placeholder.com/80x80'
+                    imageUrl: 'http://via.placeholder.com/80x80'
                 },
                 quantity: 2
             },
@@ -44,7 +44,7 @@ export function fetchCartProducts() {
                     description: 'Stuff dealing with graph databases in here',
                     price: 1.99,
                     belongsTo: [0, 6],
-                    imageUrl: 'http//via.placeholder.com/80x80'
+                    imageUrl: 'http://via.placeholder.com/80x80'
                 },
                 quantity: 1
             },
