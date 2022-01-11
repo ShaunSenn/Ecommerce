@@ -22,7 +22,7 @@ class ShippingForm extends Component {
                 />
 
                 <Field 
-                    className='shipping-form__street-address' 
+                    className='shipping-form__address' 
                     type='address' 
                     title='Street Address' 
                     placeholder='Street Address' 
@@ -40,7 +40,7 @@ class ShippingForm extends Component {
                 />
 
                 <Field 
-                    className='shipping-form__State' 
+                    className='shipping-form__state' 
                     type='state' 
                     title='State' 
                     placeholder='State' 
