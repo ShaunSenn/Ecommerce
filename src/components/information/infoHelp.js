@@ -14,7 +14,7 @@ export function InfoTitle({ className, title, value }) {
             <div className='info-title__title'>
                 {title}
             </div>
-            <div className='infor-title__value'>
+            <div className='info-title__value'>
                 {value}
             </div>
         </div>
