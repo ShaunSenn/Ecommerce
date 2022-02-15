@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 import { reduxForm, Field } from 'redux-form';
 
@@ -7,6 +7,8 @@ import { FormInput, FormButton } from '../formFields';
 import history from '../../history';
 
 import OrderSummary from './orderSummary';
+
+import { UnderlinedTitle } from './infoHelp';
 
 class PaymentForm extends Component {
     render() {
@@ -65,7 +67,11 @@ class PaymentForm extends Component {
                     name='pay-complete' 
                     component={FormButton}/>
                     <OrderSummary className='payment-form__order-summary'/>
-
+                    <div className='payment-form__shipping-info shipping-info'>
+                        <UnderlinedTitle className='shipping-info__title' title='Shipping To'/>
+                        <div className='shipping-info__name small-text'>Jordan Hudgens</div>
+                        <div className='shipping-info__address small-text'>1010 Bottega St. Salt Lake City, Utah</div>
+                    </div>
             </form>
         )
     }
